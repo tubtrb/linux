@@ -219,6 +219,8 @@
 };
 
 &pcie0 {
+	brcm,tperst-clk-ms = <100>;
+
 	pci@0,0 {
 		device_type = "pci";
 		#address-cells = <3>;
