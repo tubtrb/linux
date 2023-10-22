@@ -471,7 +471,7 @@ int __weak arch_show_interrupts(struct seq_file *p, int prec)
 # define ACTUAL_NR_IRQS nr_irqs
 #endif
 
-__attribute__((noinline)) void rpi_get_interrupt_info(struct irqaction *action_p)
+void rpi_get_interrupt_info(struct irqaction *action_p)
 {
 	unsigned int irq_num = action_p->irq;
 	void *irq_handler = NULL;
